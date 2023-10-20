@@ -28,7 +28,7 @@
   import { mapState } from 'pinia';
   import Logo from './logo.vue';
   import Nav from './nav.vue';
-import { useMenuStore } from '~~/store/menu';
+import { useMenuStore } from '@/stores/menu';
 
   export default {
     name: 'Sidebar',

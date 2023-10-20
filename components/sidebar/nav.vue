@@ -22,8 +22,8 @@
   import { mapState } from 'pinia';
   import { layoutClasses } from '../../constants/layout';
   import Navmenu from './navmenu.vue';
-import { useMenuStore } from '~~/store/menu';
-import { useLayoutStore } from '~~/store/layout';
+import { useMenuStore } from '@/stores/menu';
+import { useLayoutStore } from '@/stores/layout';
 
   
   export default {

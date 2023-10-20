@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { useLayoutStore } from '~~/store/layout';
+import { useLayoutStore } from '@/stores/layout';
 
   export default {
     name: 'Mode',

@@ -42,6 +42,13 @@
     --fc-button-hover-border-color: var(--theme-deafult);
 }
 
+body {
+    color: #2f2f3b;
+    font-family: Rubik,sans-serif;
+    font-size: 14px;
+    overflow-x: hidden
+}
+
 body[class='dark-only'] {
     --light-background: rgba(31, 32, 40 , 0.65);
     --recent-chart-bg: #262932;

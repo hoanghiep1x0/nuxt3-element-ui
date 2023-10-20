@@ -14,7 +14,7 @@
 </template>
 
 <script>
-  import { useLayoutStore } from '~~/store/layout';
+  import { useLayoutStore } from '@/stores/layout';
 import json from '../data/menu';
   // import { mapGetters } from 'vuex'
   export default {

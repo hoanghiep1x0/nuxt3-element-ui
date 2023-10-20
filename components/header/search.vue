@@ -75,7 +75,7 @@
 <script>
   // var body = document.getElementsByTagName('body')[0];
   import { mapState } from 'pinia';
-import { useMenuStore } from '~~/store/menu';
+import { useMenuStore } from '@/stores/menu';
 
   export default {
     name: 'SearchBar',

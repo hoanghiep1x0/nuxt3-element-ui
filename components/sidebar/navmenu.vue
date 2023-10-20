@@ -50,8 +50,8 @@
 </template>
 <script>
   import { mapState } from 'pinia';
-import { useLayoutStore } from '~~/store/layout';
-import { useMenuStore } from '~~/store/menu';
+import { useLayoutStore } from '@/stores/layout';
+import { useMenuStore } from '@/stores/menu';
   import { layoutClasses } from '../../constants/layout';
 import { useWindowScroll } from '@vueuse/core'
 

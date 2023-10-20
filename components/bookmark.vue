@@ -131,7 +131,7 @@
 </template>
 <script>
   import { mapState } from 'pinia';
-import { useMenuStore } from '~~/store/menu';
+import { useMenuStore } from '@/stores/menu';
 
   export default {
     props: ['activeclass'],

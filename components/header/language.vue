@@ -18,7 +18,7 @@
  
 </template>
 <script>
-import { useLanguageStore } from '~~/store/language';
+import { useLanguageStore } from '@/stores/language';
 export default {
   name: 'languagePage',
   data() {

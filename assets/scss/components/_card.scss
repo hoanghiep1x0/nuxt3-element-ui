@@ -22,12 +22,14 @@
     border-top-left-radius: $card-border-radious;
     border-top-right-radius: $card-border-radious;
     position: relative;
-
+    color: $card-header-span-color;
+    
     &.card-no-border {
       border-bottom: none !important;
     }
 
     h5 {
+     
       &:not(.mb-0),
       &:not(.m-0) {
         margin-bottom: 0;

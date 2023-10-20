@@ -1,4 +1,5 @@
 /* eslint-disable */
+import { acceptHMRUpdate, defineStore } from "pinia";
 import Layout from "../data/layout.json";
 export const useLayoutStore = defineStore({
   id: "layout",

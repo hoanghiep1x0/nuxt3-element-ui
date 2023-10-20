@@ -38,36 +38,10 @@ export default defineNuxtConfig({
   plugins: [
     { src: './plugins/useBootstrap.client.ts', mode: 'client' },
   ],
-  i18n: {
-    strategy: "prefix_except_default",
-    defaultLocale: "en",
-    locales: [
-      {
-        icon: 'flag-icon-us',
-        code: "en",
-        name: "English",
-        short: '(US)',
-      },
-      {
-        icon: 'flag-icon-fr',
-        code: "fr",
-        name: "Français",
-      },
-      {
-        icon: 'flag-icon-es',
-        code: "es",
-        name: "Español",
-      },
-      {
-        icon: 'flag-icon-pt',
-        short: '(BR)',
-        code: "pt",
-        name: "Português",
-      },
-    ],
-    vueI18n: "./i18n.config.ts"
-  },
 
+  auth: authConfig,
+  i18n: i18nConfig,
+  googleFonts: fontConfig,
   // vueuse
   vueuse: {
     ssrHandlers: true,

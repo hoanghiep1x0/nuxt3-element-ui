@@ -1,7 +1,7 @@
 <template>
   <div class="bg-green-500"></div>
+  <NuxtLoadingIndicator />
   <NuxtLayout>
-    <NuxtLoadingIndicator />
     <NuxtPage />
   </NuxtLayout>
 </template>

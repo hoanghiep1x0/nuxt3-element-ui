@@ -73,7 +73,7 @@ import Cart from './cart';
 import Profile from './profile';
 import Logo from './logo.vue';
 import SearchBar from './search';
-import { useMenuStore } from '~~/store/menu';
+import { useMenuStore } from '@/stores/menu';
 import language from './language.vue';
 
 export default {

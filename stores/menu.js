@@ -1,6 +1,6 @@
 import Menu from '../data/menu.json';
 // import BonusUI from '../../data/bonusui';
-import { defineStore } from 'pinia';
+import { acceptHMRUpdate, defineStore } from "pinia";
 export const useMenuStore= defineStore({
   id:'menu',
   state:()=>{
