@@ -8,7 +8,7 @@ import fontConfig from './config/frontConfig';
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  //devtools: { enabled: true },
 
   runtimeConfig: runtimeConfig,
   app:  appConfig,
