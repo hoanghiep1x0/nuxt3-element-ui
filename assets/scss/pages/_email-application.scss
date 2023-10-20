@@ -65,6 +65,13 @@
       }
     }
   }
+  .email-wrapper {
+    .emailread-group {
+      .action-wrapper {
+        margin-top: 18px;
+      }
+    }
+  }
   .email-app-sidebar {
     .media img {
       border: 2px solid $light-gray;
@@ -77,6 +84,7 @@
           line-height: 39px;
           text-transform: uppercase;
           border-radius: 3px;
+          color: $white;
           i {
             margin-right: 10px;
           }

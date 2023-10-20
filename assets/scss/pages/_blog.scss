@@ -40,6 +40,7 @@
   .blog-details-main{
     hr{
           background-color: $gray-60;
+          height: 1px;
       }
     .blog-social{
       margin:20px 0;
@@ -128,6 +129,8 @@
     hr{
       margin-top: 10px;
       margin-bottom: 10px;
+      background-color: $gray-60;
+      height: 1px;
     }
   }
   img{

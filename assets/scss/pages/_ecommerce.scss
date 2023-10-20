@@ -12,16 +12,18 @@
     li {
       padding-top: 15px;
       opacity: 0.5;
+
       @media (max-width: 1500px) {
         padding-top: 10px;
       }
     }
   }
 }
-.product-grid{
-  .modal{
-    .modal-header{
-      .btn-close{
+
+.product-grid {
+  .modal {
+    .modal-header {
+      .btn-close {
         position: absolute;
         right: 20px;
         top: 20px;
@@ -29,6 +31,7 @@
     }
   }
 }
+
 .collection-filter-block {
   svg {
     width: 50px;
@@ -37,10 +40,12 @@
     fill: #e8e5ff;
     margin-right: 10px;
   }
+
   h5 {
     margin-bottom: 0;
     font-size: 16px;
   }
+
   p {
     font-size: 13px;
   }
@@ -48,16 +53,18 @@
   .media-body {
     opacity: 0.5;
   }
+
   li {
     &+li {
       margin-top: 16px;
     }
   }
-  ul.pro-services{
-    li{       
-      svg{
-        width:auto;
-      }       
+
+  ul.pro-services {
+    li {
+      svg {
+        width: auto;
+      }
     }
   }
 
@@ -69,9 +76,11 @@
     background-color: transparent !important;
     border-color: $light-gray !important;
     padding: 8px 12px;
+
     i {
       color: $dark-gray;
     }
+
     svg {
       width: 14px !important;
       stroke: $dark-color;
@@ -81,6 +90,7 @@
   span {
     padding: 0 4px;
   }
+
   .input-group {
     background-color: rgba($dark-color, 0.1);
     // width:100px; 
@@ -96,8 +106,9 @@
     max-height: 37px;
   }
 }
+
 .product-social {
-  li {   
+  li {
     a {
       color: $dark-gray;
       font-size: 15px;
@@ -117,8 +128,10 @@
         transition: all 0.3s ease;
       }
     }
-    &:nth-child(n+2){
-      margin-left:10px;
+
+    &:nth-child(n+2) {
+      margin-left: 10px;
+
       [dir="rtl"] & {
         margin-left: unset;
         margin-right: 10px;
@@ -133,8 +146,10 @@
       .card-header {
         padding: 16px 30px;
         border-radius: 5px;
+
         h6 {
           position: relative;
+
           .pull-right {
             i {
               position: absolute;
@@ -201,22 +216,27 @@
     }
   }
 }
-.product-table{
-  table{
-    th{
+
+.product-table {
+  table {
+    th {
       background-color: $body-color;
     }
-    th, td{
+
+    th,
+    td {
       padding: 0.75rem;
       border: 1px solid $gray-300;
-    } 
+    }
   }
-  button{
+
+  button {
     padding: 7px 10px;
   }
 }
+
 .d-none-productlist {
-  // display: block;
+  display: none;
 
   svg {
     vertical-align: middle;
@@ -366,11 +386,13 @@
 
   .color-selector {
     line-height: 0.9;
-    ul{
-      li{
+
+    ul {
+      li {
         margin: 0 2px;
       }
     }
+
     ul {
       li {
         display: inline-block;
@@ -511,9 +533,9 @@
   .product-details {
     padding: 15px 25px;
 
-    > a{
-			color: $theme-body-font-color;
-		}
+    >a {
+      color: $theme-body-font-color;
+    }
 
     p {
       margin-bottom: 0;
@@ -597,6 +619,7 @@
           }
         }
       }
+
       .btn-close {
         position: absolute;
         right: 15px;
@@ -673,33 +696,39 @@
 
 .product-page-main {
   padding: 30px;
+
   .owl-item {
     .item {
       border: 1px solid $light-color;
       border-radius: 5px;
       background-color: #f8f8f8;
     }
+
     &.current {
       .item {
         border: 1px solid var(--theme-deafult);
       }
     }
   }
+
   .product-slider {
     margin-bottom: 20px;
+
     img {
       @media (min-width: 1400px) {
         height: 520px;
         object-fit: cover;
-     }
-     @media (min-width: 1500px) {
+      }
+
+      @media (min-width: 1500px) {
         height: 400px;
         object-fit: cover;
-     }
+      }
     }
   }
-  .product-color{
-    margin-top:10px;
+
+  .product-color {
+    margin-top: 10px;
   }
 
 

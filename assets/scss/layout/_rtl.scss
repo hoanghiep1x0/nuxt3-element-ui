@@ -37,6 +37,24 @@ html[dir="rtl"]{
       }
     }
   }
+  .login-card {
+    .login-main {
+      .theme-form {
+        .show-hide {
+          right: unset;
+          left: 20px;
+        }
+        .link {
+          left: 0;
+          right: unset;
+        }
+        .or:before {
+          left: 0;
+          right: unset;
+        }
+      }
+    }
+  }
   .knowledgebase-search {
     .form-inline {
        svg {
@@ -52,6 +70,46 @@ html[dir="rtl"]{
       }
     }
   } 
+  .page-wrapper {
+    &.compact-wrapper {
+      .page-body-wrapper {
+        div {
+          &.sidebar-wrapper {
+            .sidebar-main {
+              .sidebar-links {
+                >li {
+                    a {
+                      svg {
+                        margin-left: 10px;
+                        margin-right: unset;
+                      }
+                    }
+                    &.sidebar-list  {
+                      .badge {
+                        right: unset;
+                        left: 50px;
+                      }
+                    }
+                  .sidebar-submenu {
+                    >li {
+                      a {
+                        padding-right: 48px !important;
+                        padding-left: unset;
+                        &::after {
+                          left: unset;
+                          right: 27px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .pill-input-group span {
     &:last-child {
       border-top-right-radius: unset !important;
@@ -4424,6 +4482,13 @@ html[dir="rtl"]{
     }
   }
   @media only screen and (max-width: 360px) {
+    .btn-group-showcase {
+      .radio {
+        input[type="radio"] {
+          display: none;
+        }
+      }
+    }
     .social-app-profile {
       .hovercard {
         .user-image {

@@ -7,7 +7,32 @@
         background: $white;
     }
 }
-
+.form-select {
+    color: $theme-body-font-color;
+}
+.input-group-text {
+    color: $theme-body-font-color;
+}
+.multiselect-tag {
+    background-color: var(--ms-tag-bg,) #7366ff !important;
+}
+.badge-spacing {
+    .badge {
+        padding: 12px 12px;
+        font-size: 12px;
+    }
+}
+.was-validated {
+    input[type="file"] {
+        color: $black !important;
+    }
+}
+.dp__input {
+    border: none !important;
+}
+.multiselect {
+    border-color: var(--ms-border-width,1px) solid var(--ms-border-color,#f4f4f4) !important;
+}
 // popover
 .popover {
     background-color: $white;
@@ -142,7 +167,7 @@
                     text-align: right;
                 }
                 @media (max-width: 575px) {
-                    padding: 12px 15px;
+                    padding: 12px 15px !important;
                 }
             }
         }
@@ -294,20 +319,6 @@
         }
     }
 }
-// faq css start
-.faq-accordion {
-    .card {
-        .btn-link {
-            svg {
-                margin-left: 20px;
-                @media (max-width: 575.98px) {
-                    margin-left: 10px;
-                }
-            }
-        }
-    }
-}
-// faq css end
 .job-filter {
     .faq-form {
         .form-control {
@@ -344,4 +355,32 @@ button[data-toggle="dropdown"] {
 }
 .form-control{
     color: $gray-900 !important;
+}
+
+//nuxt pluging scss
+.my-gallery{
+    img{
+        cursor: pointer;
+    }
+    figure{
+        margin-bottom: 25px;
+    }
+}
+.my-gallery.gallery-with-description{
+    h4 {
+      margin-top: 0px;
+    }
+    .caption{
+      border-top: none !important;
+      margin-bottom: 0;
+      padding: 5px 10px 10px 10px;
+      border: 1px solid #e4e6ec;
+      border-radius: 0 0 5px 5px;
+    }
+    img{
+      padding: 10px !important;
+      border: 1px solid #ddd !important;
+      border-bottom: none !important;
+      border-radius: 5px 5px 0 0;
+    }
 }

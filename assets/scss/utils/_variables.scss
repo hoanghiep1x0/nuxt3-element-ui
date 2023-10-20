@@ -1,6 +1,7 @@
-:root{
-    --toastify-color-success:  var(--theme-deafult) !important;
+:root {
+    --toastify-color-success: var(--theme-deafult) !important;
 }
+
 // General variables
 $theme-font-color: #242934;
 $theme-body-font-color: #2F2F3B;
@@ -9,6 +10,7 @@ $body-color: #f8f8f8;
 $main-body-color: #F7F8F9;
 
 // Theme colors variables
+$light-primary: #E0DDFF;
 $primary-color: #7366FF;
 $secondary-color: #FF3364;
 $success-color: #54BA4A;
@@ -69,7 +71,8 @@ $light-body-bg-color:#fafdff;
 $font-rubik: Rubik;
 $font-roboto: Roboto;
 $font-serif: sans-serif;
-$landing-cursive: 'Caveat', cursive;
+$landing-cursive: 'Caveat',
+cursive;
 $font-themify: themify;
 $font-awesome: FontAwesome;
 $font-ICO: IcoFont;

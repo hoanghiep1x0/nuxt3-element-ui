@@ -7,6 +7,15 @@
   }
   .chat-menu {
     max-width:340px;
+    .user-profile {
+      .social-list {
+        a {
+          color: $semi-dark;
+          font-size: 15px;
+          padding: 0 7px;
+        }
+      }
+    }
   }
   .people-list {
     .search{
@@ -23,7 +32,7 @@
         right: 10px;
         top: 17px;
         font-size: 14px;
-        color: $light-gray;
+        color: $black;
       }
     }
     ul {

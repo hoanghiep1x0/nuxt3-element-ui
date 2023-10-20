@@ -1594,7 +1594,7 @@
     }
 
     .toogle-bar {
-      display: inline-block;
+      display: inline-block !important;
       margin-right: 0 !important;
     }
   }
@@ -2030,7 +2030,7 @@
 
           .sidebar-main {
             .sidebar-links {
-              height: calc(100vh - 95px)
+              height: calc(100vh - 55px)
             }
           }
 
@@ -4224,6 +4224,23 @@
   }
   .btn {
     padding: 6px 16px !important;
+  }
+  .page-wrapper {
+    .page-header {
+      .header-wrapper {
+        .nav-right {
+          .cart-dropdown {
+            .qty-box {
+              .input-group {
+                .btn {
+                  padding: 0 7px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .alert-theme {
     min-width: 380px;

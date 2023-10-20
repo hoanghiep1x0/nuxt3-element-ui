@@ -44,6 +44,15 @@
     background-color: $white;
 
     .theme-form {
+      .social{
+        i{
+          margin-right: 3px;
+          [dir="rtl"] & {
+            margin-right: unset;
+            margin-left: 3px;
+          }
+        }
+      }
       h4 {
         margin-bottom: 5px;
       }

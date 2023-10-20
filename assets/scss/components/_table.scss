@@ -9,11 +9,14 @@ td,
 th {
 	border-color: #dee2e6;
 }
+
 .pills-component {
 	width: 20%;
 }
-.table{
+
+.table {
 	margin-bottom: $table-b-margin;
+
 	> :not(:last-child) {
 		> :last-child {
 			>* {
@@ -21,14 +24,18 @@ th {
 			}
 		}
 	}
-	th,td{
+
+	th,
+	td {
 		padding: $table-padding;
 	}
+
 	&.table-primary {
 		th {
 			color: $white;
 		}
 	}
+
 	thead.bg-primary {
 		tr {
 			th {
@@ -36,60 +43,78 @@ th {
 			}
 		}
 	}
-	th{
+
+	th {
 		color: $table-heading-color;
 		font-weight: 500;
+
 		&.f-light {
 			color: var(--chart-text-color);
 			opacity: 0.8;
 		}
 	}
-	td{
+
+	td {
 		color: $table-row-color;
 	}
-	[class*='bg-']{
+
+	[class*='bg-'] {
 		color: $white;
 	}
-	.bg-light{
+
+	.bg-light {
 		color: $theme-body-font-color;
 	}
-	tfoot{
+
+	tfoot {
 		font-weight: $table-footer-font-weight;
 	}
 }
+
 .table-dark {
 	th {
 		color: $white;
 	}
 }
+
 .table-inverse {
 	color: $white;
 	background-color: $table-inverse-bg-color;
-	th,td{
+
+	th,
+	td {
 		border-color: $white;
 		color: $white;
 	}
+
 	&.table-bordered {
 		border: 0;
 	}
 }
-.table[class*='bg-']{
-	th,td{
+
+.table[class*='bg-'] {
+
+	th,
+	td {
 		color: $white;
 	}
 }
+
 .table-hover {
 	>tbody {
 		>tr:hover {
 			--bs-table-accent-bg: #f6f6f6;
 		}
 	}
-	tbody{
-		tr{
-			&:hover{
-				background-color: rgba($primary-color,0.1);
+
+	tbody {
+		tr {
+			&:hover {
+				background-color: rgba($primary-color, 0.1);
 			}
+
 			vertical-align: middle;
+
 			td {
 				svg {
 					width: 30px;
@@ -97,6 +122,7 @@ th {
 					padding: 5px;
 					border-radius: 4px;
 					margin-right: 10px;
+
 					[dir="rtl"] & {
 						margin-right: unset;
 						margin-left: 10px;
@@ -159,31 +185,45 @@ th {
 }
 
 //Sizing class
-.table-xl{
-	td,th{
+.table-xl {
+
+	td,
+	th {
 		padding: $table-xl-padding;
 		font-size: $table-xl-font;
 	}
 }
-.table-lg{
-	td,th{
+
+.table-lg {
+
+	td,
+	th {
 		padding: $table-lg-padding;
 		font-size: $table-lg-font;
 	}
 }
-.table-de{
-	td,th{
+
+.table-de {
+
+	td,
+	th {
 		padding: $table-de-padding;
 	}
 }
-.table-sm{
-	th,td{
+
+.table-sm {
+
+	th,
+	td {
 		padding: $table-sm-padding;
 		font-size: $table-sm-font;
 	}
 }
-.table-xs{
-	th,td{
+
+.table-xs {
+
+	th,
+	td {
 		padding: $table-xs-padding;
 		font-size: $table-xs-font;
 	}
@@ -191,18 +231,26 @@ th {
 
 //Table Border
 .table-border-horizontal {
-	tr,th,td{
+
+	tr,
+	th,
+	td {
 		border-top: 1px solid $horizontal-border-color;
 		padding: $horizontal-padding;
 	}
 }
-.table-border-vertical{
-	tr,th,td{
+
+.table-border-vertical {
+
+	tr,
+	th,
+	td {
 		border-top: 0;
 		border-right: 1px solid $horizontal-border-color;
 	}
-	tr{
-		td{
+
+	tr {
+		td {
 			border-bottom: 0;
 
 			&:last-child {
@@ -210,6 +258,7 @@ th {
 			}
 		}
 	}
+
 	tbody {
 		tr {
 			th {
@@ -218,32 +267,45 @@ th {
 		}
 	}
 }
-.table-bordernone{
-	td{
+
+.table-bordernone {
+	td {
 		border: none !important;
 	}
+
 	thead {
 		th {
 			border: none !important;
 		}
 	}
-	.u-s-tb{
+
+	.u-s-tb {
 		padding: 11px;
 	}
 }
-.table-striped{
-	tbody{
-		tr{
-			&:nth-of-type(odd){
+
+.table-striped {
+	tbody {
+		tr {
+			&:nth-of-type(odd) {
 				--bs-table-accent-bg: rgba(245, 247, 250, 0.5);
 			}
 		}
 	}
 }
-.table-striped > tbody > tr:nth-of-type(odd) > * {
-    color: $theme-body-font-color;
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+	color: $black;
 }
-.table-bordered{
+
+.grid {
+	.table-striped>tbody>tr:nth-of-type(odd)>* {
+		color: $black;
+	}
+}
+
+.table-bordered {
+
 	thead,
 	tbody,
 	tfoot,
@@ -253,6 +315,7 @@ th {
 		border-color: $horizontal-border-color;
 	}
 }
+
 /**=====================
      39.Table CSS Ends
 ==========================**/

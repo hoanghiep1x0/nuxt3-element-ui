@@ -4,6 +4,7 @@
 .jkanban-container {
   .btn {
     margin-bottom: 10px;
+    margin-right: 5px;
   }
 
   .note {
@@ -64,6 +65,7 @@
 }
 
 .kanban-item {
+  color: $black;
   background: transparent;
   padding: 0;
   margin-bottom: 20px;
@@ -205,4 +207,286 @@ footer {
 
 /**=====================
     61. base_inputs CSS ends
+==========================**/
+
+/**=====================
+   default Demo
+==========================**/
+
+.kanban-container {
+  /* position: relative; */
+  /* box-sizing: border-box; */
+  width: auto;
+}
+
+.kanban-container * {
+  box-sizing: border-box;
+}
+
+.kanban-container:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.kanban-board {
+  position: relative;
+  float: left;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.kanban-board.disabled-board {
+  opacity: 0.3;
+}
+
+.kanban-board header {
+  font-size: 16px;
+  padding: 20px 30px;
+}
+
+.kanban-board header .kanban-title-board {
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.kanban-board header .kanban-title-button {
+  float: right;
+}
+
+.kanban-board .kanban-drag {
+  min-height: 200px;
+  padding: 20px;
+}
+
+.kanban-board:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.kanban-board.is-moving.gu-mirror {
+  transform: rotate(3deg);
+}
+
+.kanban-board.is-moving.gu-mirror .kanban-drag {
+  overflow: hidden;
+  padding-right: 50px;
+}
+
+.kanban-item {
+  background: #f8f8f8;
+  padding: 15px;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  margin-bottom: 0;
+}
+
+.kanban-item:hover {
+  cursor: move;
+}
+
+.kanban-item:last-child {
+  margin: 0;
+}
+
+.kanban-item.is-moving.gu-mirror {
+  transform: rotate(3deg);
+  height: auto !important;
+}
+
+#myKanban {
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+/**=====================
+   default Demo end
+==========================**/
+
+
+/**=====================
+   custom board start
+==========================**/
+.kanban-container {
+  /* position: relative; */
+  /* box-sizing: border-box; */
+  width: auto;
+}
+
+.kanban-container * {
+  box-sizing: border-box;
+}
+
+.kanban-container:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.kanban-board {
+  position: relative;
+  float: left;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.kanban-board.disabled-board {
+  opacity: 0.3;
+}
+
+.kanban-board header {
+  font-size: 16px;
+  padding: 20px 30px;
+}
+
+.kanban-board header .kanban-title-board {
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.kanban-board header .kanban-title-button {
+  float: right;
+}
+
+.kanban-board .kanban-drag {
+  min-height: 200px;
+  padding: 20px;
+}
+
+.kanban-board:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.kanban-board.is-moving.gu-mirror {
+  transform: rotate(3deg);
+}
+
+.kanban-board.is-moving.gu-mirror .kanban-drag {
+  overflow: hidden;
+  padding-right: 50px;
+}
+
+.kanban-item {
+  background: #f8f8f8;
+  padding: 15px;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  margin-bottom: 0;
+}
+
+.kanban-item:hover {
+  cursor: move;
+}
+
+.kanban-item:last-child {
+  margin: 0;
+}
+
+.kanban-item.is-moving.gu-mirror {
+  transform: rotate(3deg);
+  height: auto !important;
+}
+
+#myKanban {
+  overflow-x: auto;
+  padding: 20px 0;
+}
+/**=====================
+   custom board end
+==========================**/
+/**=====================
+   api start
+==========================**/
+
+.kanban-container {
+  /* position: relative; */
+  /* box-sizing: border-box; */
+  width: auto;
+}
+
+.kanban-container * {
+  box-sizing: border-box;
+}
+
+.kanban-container:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.kanban-board {
+  position: relative;
+  float: left;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.kanban-board.disabled-board {
+  opacity: 0.3;
+}
+
+.kanban-board header {
+  font-size: 16px;
+  padding: 20px 30px;
+}
+
+.kanban-board header .kanban-title-board {
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.kanban-board header .kanban-title-button {
+  float: right;
+}
+
+.kanban-board .kanban-drag {
+  min-height: 200px;
+  padding: 20px;
+}
+
+.kanban-board:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.kanban-board.is-moving.gu-mirror {
+  transform: rotate(3deg);
+}
+
+.kanban-board.is-moving.gu-mirror .kanban-drag {
+  overflow: hidden;
+  padding-right: 50px;
+}
+
+.kanban-item {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.kanban-item:hover {
+  cursor: move;
+}
+
+.kanban-item:last-child {
+  margin: 0;
+}
+
+.kanban-item.is-moving.gu-mirror {
+  transform: rotate(3deg);
+  height: auto !important;
+}
+
+#myKanban {
+  overflow-x: auto;
+  padding: 20px 0;
+}
+/**=====================
+   api end
 ==========================**/

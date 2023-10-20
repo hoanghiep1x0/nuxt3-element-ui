@@ -11,6 +11,81 @@ body {
 				background-color: $dark-body-background !important;
 			}
 		}
+		.login-card {
+			.btn-showcase .btn {
+			  background-color: $dark-card-background !important;
+			  color: $white;
+			  border-color: $dark-card-background !important;
+			}
+	  
+			.login-main {
+			  box-shadow: 0 0 37px rgba($white, 0.05);
+			  background-color: $dark-body-background;
+			  .theme-form {
+				input {
+				  background-color: $dark-card-background !important;
+				}
+	  
+				.or {
+				  &:before {
+					background-color: $dark-card-background;
+				  }
+				}
+	  
+				.checkbox label::before {
+				  background-color: $dark-card-background !important;
+				  border-color: $dark-card-background !important;
+				}
+	  
+				.login-social-title {
+				  h6 {
+					background-color: $dark-body-background;
+				  }
+				  &::before {
+					background-color: $dark-card-border;
+				  }
+				}
+	  
+				ul.login-social {
+				  li {
+					border-color: $dark-card-border;
+				  }
+				}
+			  }
+			}
+		}
+		.my-gallery {
+			&.gallery-with-description {
+				img, .caption {
+					border-color: $dark-border-color !important;				}
+			}
+		}
+		.ck.ck-toolbar{
+			background-color: $dark-card-background;
+			border: 1px solid $dark-border-color;
+			.ck.ck-toolbar__separator {
+				background: $dark-body-background;
+			}
+			.ck.ck-button .ck-button__label {
+				color: $dark-small-font-color;
+			}
+		}
+		.ck.ck-button:not(.ck-disabled):hover{
+			background-color: $dark-body-background;
+		}
+		.ck.ck-icon{
+			color: $dark-small-font-color;
+		}
+		.ck.ck-editor__main>.ck-editor__editable {
+			background-color: $dark-card-background;
+			border: 1px solid $dark-border-color;
+		}
+		a.cke_button{
+			filter: brightness(0) invert(1);
+		}
+		.cke_combo_text{
+			color: $white;
+		}
 		.wizard-4 {
 			.step-container {
 				background-color: $dark-card-background;
@@ -261,6 +336,43 @@ body {
 				}
 			}
 		}
+		.page-wrapper {
+			.page-header {
+			  .header-wrapper {
+				.search-full {
+				  .ProfileCard-details {
+					.realname {
+					  color: $dark-all-font-color;
+					}
+				  }
+				}
+				.nav-right {
+					.bookmark-flip {
+						.bookmark-dropdown {
+							.bookmark-search {
+								&.Typeahead-menu {
+									.ProfileCard {
+										.ProfileCard-details {
+											.ProfileCard-realName {
+												.realname {
+													color: $dark-all-font-color;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			  }
+			}
+		  }
+		  .ProfileCard-avatar {
+			svg {
+			  stroke: $dark-all-font-color;
+			}
+		}
 		.form-check-input {
 			background-color: $dark-body-background;
 		}
@@ -356,7 +468,39 @@ body {
 				}
 			}
 		}
-		
+		.page-wrapper {
+			&.compact-wrapper {
+			  	.page-body-wrapper {
+					div {
+				  		&.sidebar-wrapper {
+							.sidebar-main {
+					  			.sidebar-links {
+									>li {
+										a {
+							  				svg {
+												stroke: $white;
+							  				}
+										}
+										.sidebar-submenu {
+											>li {
+												a {
+													color: $sidebar-submenu-font-color;
+												}
+											}
+										}
+										.sidebar-link {
+											&.active {
+												background-color: rgba(115, 102, 255, 0.2);
+											}
+										}
+									}
+					  			}
+							}
+				  		}
+					}
+			  	}
+			}
+		}
 		// tooltip css end
 		
 		.page-wrapper {
@@ -474,6 +618,7 @@ body {
 				.theme-form {
 					input {
 						background-color: $dark-card-background !important;
+						color: $dark-all-font-color !important;
 					}
 					
 					.or {
@@ -1165,6 +1310,7 @@ body {
 		.kanban-container {
 			.kanban-item {
 				background-color: $dark-body-background;
+				color: $white;
 				.kanban-box {
 					border: 1px solid rgba($primary-color, 0.15);
 					background-color: $dark-body-background;
@@ -2846,7 +2992,7 @@ body {
 						}
 						
 						.img-thumbnail {
-							background-color: $dark-body-background;
+							background-color: $dark-card-background;
 							border: 1px solid $dark-card-border;
 						}
 						
